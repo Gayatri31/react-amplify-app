@@ -1,0 +1,52 @@
+{
+    "paths": [
+        {
+            "name": "/items",
+            "lambdaFunction": "getItems",
+            "privacy": {
+                "open": true
+            }
+        },
+        {
+            "name": "/item",
+            "lambdaFunction": "Item",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "Items",
+    "apiName": "Items",
+    "functionArns": [
+        {
+            "lambdaFunction": "getItems"
+        },
+        {
+            "lambdaFunction": "Item"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-amplifyapp-dev-int-183139-authRole",
+        "unAuthRoleName": "amplify-amplifyapp-dev-int-183139-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "getItems",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        },
+        {
+            "category": "function",
+            "resourceName": "Item",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
