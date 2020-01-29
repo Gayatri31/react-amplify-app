@@ -19,7 +19,7 @@ class App extends Component {
   }
 
   getItems = () => {
-    console.log('calling API....')
+    console.log('calling Amplify API....')
     API.get('Items','/items',{}).then(response => {
       // Add your code here
       console.log('--------Response from amplify API----------');
@@ -31,10 +31,11 @@ class App extends Component {
   }
 
   getProducts = () => {
+    console.log('calling SLS API....')
     axios.get('https://es0qurxzm0.execute-api.us-east-1.amazonaws.com/dev/products')
     .then(function (response) {
       // handle success
-      console.log('SLS API calling....')
+      console.log('SLS API response....')
       console.log(response);
       this.setState({products: response})
     })
