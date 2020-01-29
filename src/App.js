@@ -53,14 +53,7 @@ class App extends Component {
           <p>
             Amplify Auth Added...
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React + AWS Amplify
-          </a>
+          <hr />
           <button onClick={this.getItems}>List Items</button>
           <p>{JSON.stringify(this.state.items)}</p>
           <hr />
