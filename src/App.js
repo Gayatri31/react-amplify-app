@@ -51,14 +51,13 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Amplify Auth Added...
+            Deployed a React application in the cloud by integrating with GitHub and using the Amplify Console.
           </p>
-          <hr />
-          <button onClick={this.getItems}>List Items</button>
+          {/* <button onClick={this.getItems}>List Items</button>
           <p>{JSON.stringify(this.state.items)}</p>
           <hr />
           <button onClick={this.getProducts}>List Products</button>
-          <p>{JSON.stringify(this.state.products)}</p>
+          <p>{JSON.stringify(this.state.products)}</p> */}
         </header>
       </div>
     );
